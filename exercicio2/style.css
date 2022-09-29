@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Exemplo com Flex
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
+    border: 1px solid black;
+    width: 33vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-device-width: 480px){
+    main{
+        flex-direction: column;
+    }
+    section{
+        width: 100vw;
+        align-items: start;
+    }
+} */
+
+/* Exemplo com Grid */
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+section{
+    display: grid;
+    border: 1px solid black;
+    color: red;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-device-width: 480px){
+    main{
+        grid-template-columns: 1fr;
+    }
+    section{
+        align-items: start;
+        color: red;
+    }
+}
